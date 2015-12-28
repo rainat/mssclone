@@ -1,0 +1,308 @@
+/** HERO
+===================================*/
+.hero{
+	@include clearfix();
+	color: white;
+	padding: 5% 0;
+}
+.hero{
+	.hero-thumb{
+		text-align: center;
+		max-width: 530px;
+		margin: 0 auto 35px;
+		@media screen and (min-width: 62em){
+			float: right;
+			text-align: right;
+			margin: 0;
+		}
+	}
+}
+
+.hero-desc{
+		margin: 0 auto;
+		max-width: 700px;
+		overflow: hidden;
+		@media screen and (min-width: 62em){
+			padding-right: 40px;
+			margin: 0;
+			max-width: none;
+		}
+		h2{
+			margin: 0;
+			margin-bottom: 27px;
+			text-align: center;
+			@media screen and (min-width: 40em){
+				margin-bottom: 30px;
+				text-align: left;
+			}
+			font-size: 35px;
+			line-height: 1.1em;
+
+			span{
+				color: lighten($secondary-color, 18%);
+			}
+		}
+
+		.content-text{
+			margin-bottom: 40px;
+			p{
+				line-height: 1.6em;
+			}
+		}
+	}
+
+.tipsSrc{
+	@include size(220px, auto);
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+	top: -225px;
+	left: 10px;
+}
+.tipsSrc-join{
+	@include size(220px, auto);
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+	top: -128px;
+    right: 120px;
+	left: auto;
+	display: none;
+	@media screen and (min-width: 62em){
+		display: block;
+	}
+}
+
+/** MAIN SEARCH
+===================================*/
+.mainsearch{
+	@include clearfix();
+	margin-bottom: 0;
+	.container{
+		position: relative;
+	}
+	.form-group{
+		margin: 0 15px;
+		padding: 0;
+	}
+	.iteminputsal{
+		float: none;
+		width: 100%;
+	}
+	.btn-square{
+
+	}
+}
+
+/** EMPLOYEE REASON
+===================================*/
+.emreason{
+	padding: 50px 0;
+	background-color: $grey-lighten-color;
+	.title-md{
+		text-align: center;
+		margin-bottom: 45px;	
+	}
+}
+
+.emreason-box{
+	position: relative;
+	z-index: 10;
+	margin-bottom: 30px;
+	@media screen and (min-width: 48em){
+		margin-bottom: 0;
+	}
+	a{
+		color: $text-color;
+		&:hover{
+			text-decoration: none;
+			color: $text-color;
+		}
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		z-index: -1;
+		margin: auto;
+		left :0;
+		right: 0;
+		bottom: 0;
+		top: auto;
+		width: 60%;
+		height: 30px;
+		@include border-radius(100%);
+		background-color: transparent;
+		box-shadow: 0 0 30px #000000;
+		@include prefixed (transition, all 0.3s linear);
+
+	}
+
+	&:hover{
+		.inside{
+			background-color: darken(white, 3%);
+		}
+		&:after{
+			bottom: 50px;
+		}
+	}
+	.inside{
+		@include prefixed (transition, all 0.3s linear);
+		background-color: white;
+		padding: 25px;
+	}
+	figure{
+		max-width: 105px;
+		overflow: hidden;
+		margin: 0 auto 18px;
+	}
+
+	h3{
+		color: #635c5d;
+		font-size: 19px;
+		margin: 0;
+		margin-bottom: 22px;
+		text-align: center;
+	}
+
+	.content-text{
+		font-size: 0.9em;
+		    text-align: justify;
+	}
+}
+
+/** CONTRIBUTION
+===================================*/
+.contribute{
+	color: white;
+	.title-md{
+		text-align: center;
+		padding: 27px 15px;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+}
+
+.contrib-typeWrap{
+	@include make-row();
+}
+.contrib-type{
+	background-color: $dark-color;
+	background-image: image-url('banner2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	@include background-size(cover);
+	padding: 3% 0;
+	&.notDefault{
+		background-image: image-url('banner1.jpg');
+	}
+	.desc{
+		margin: 0 auto;
+		float: none;
+		max-width: 400px;
+		background: rgba(0, 0, 0, 0.6);
+		color: white;
+		padding: 28px 30px 20px;
+	}
+	.title-md{
+		padding: 0;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.content-text{
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 62em){
+		.desc{
+				margin-left: 5%;
+			}
+		&.notDefault{
+			.desc{
+				float: right;
+				margin-right: 5%;
+				margin-left: 0;
+			}
+		}
+		
+	}
+}
+
+/** MIDDEL HERO
+===================================*/
+.mid-hero{
+	@include clearfix();
+	padding: 50px 0 20px;
+	.container{
+		position: relative;
+	}
+	.desc{
+		overflow: hidden;
+		.title-md{
+			text-align: center;
+			@media screen and (min-width: 62em){
+				text-align: left;
+			}
+		}
+
+		.content-text{
+			margin-bottom: 35px;
+			text-align: left;
+		}
+
+	}
+}
+.midhero-thumb{
+	max-width: 403px;
+	margin: 0 auto 30px;
+	text-align: center;
+	@media screen and (min-width: 62em){
+		float: left;
+		text-align: left;
+		margin-top: -100px;
+		margin-right: 50px;
+	}
+}
+
+/** JOIN FORM
+===================================*/
+.ss-join{
+	padding: 50px;
+	.container{
+		position: relative;
+	}
+	header{
+		margin-bottom: 30px;
+		text-align: center;
+		.title-md{
+			margin-bottom: 25px;
+		}
+	}
+}
+
+/** SOCIAL
+===================================*/
+.ss-social{
+	text-align: center;
+	padding: 30px 0;
+
+	a{
+		@include inline-block();
+		@include square(57px);
+		background-color: #516ebf;
+		color: white;
+		text-align: center;
+		line-height: 57px;
+		font-size: 30px;
+		margin: 0 8px 10px;
+
+		&.tw{
+			background-color: #2992e4
+		}
+		&.linkedin{
+			background-color: #4376aa
+		}
+		&.google{
+			background-color: #d53e28
+		}
+	}
+}

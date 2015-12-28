@@ -1,0 +1,52 @@
+/** HEADER
+===================================*/
+#header{
+	background: $dark-color;
+	@include clearfix();
+	padding: 20px 0;
+
+}
+.logo{
+	text-align: center;
+	margin-bottom: 20px;
+	@media screen and (min-width: 40em){
+		float: left;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	a{
+		color: $grey-mdDark-color;
+		&:hover, &:focus, &:active{
+			text-decoration: none;
+			color: $grey-mdDark-color;
+		}
+	}
+
+	.logo-thumb{
+		max-width: 67px;
+		overflow: hidden;
+		@include inline-block();
+	}
+
+	.logo-text{
+		margin: 0;
+		color: $grey-mdDark-color;
+		text-transform: initial;
+		font: 23px $title-font;
+		font-weight: $font-regular;
+		@include inline-block();
+		margin-left: 15px;
+	}
+}
+
+.head-right{
+	text-align: center;
+	@media screen and (min-width: 40em){
+		float: right;
+		text-align: right;
+		padding-top: 14px;
+	}
+	.btn-square{
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,84 @@
+
+/**
+ * Variables and Bootstrap overrides
+ */
+
+// Colors
+//...............
+$primary-color:          #979735;
+$secondary-color:        #339798;
+$grey-dark-color:        #363636;
+$grey-light-color:       #b0b0b0;
+$grey-lighten-color:     #ededeb;
+$dark-color:             #1e1e1e;
+$lighter-color:          #ffffff;
+$light-color:            #e5e5dc;
+$grey-mdDark-color:		 #acacac;
+$danger-color:           #d5525b;
+$info-color:             #668aa8;
+
+$body-bg:                $lighter-color;
+$text-color:             #635c5d;
+
+// Fonts
+//...............
+$primary-font:           "Open Sans", Helvetica, Arial, sans-serif;
+$secondary-font:         "Arvo", Georgia, Times, serif;
+$font-size:              15px;
+$title-font: 			 'Istok Web', sans-serif;
+
+//fonts-type
+$font-thin:'';
+$font-light: 300;
+$font-regular: 400;
+$font-smbold:600;
+$font-bold: 700;
+
+
+
+//SCREEN SIZE
+//Responsive
+$screen-phone 	: 330px !default;
+
+//SIZE
+$pixel 	: 	10px !default;
+$pixel_1: 	9px  !default;
+$pixel_2: 	8px  !default;
+$pixel_3: 	7px  !default;
+$pixel_4: 	6px  !default;
+$pixel_5: 	5px  !default;
+$pixel_6: 	4px  !default;
+$pixel_7: 	3px  !default;
+$pixel_8: 	2px  !default;
+$pixel_9: 	1px  !default;
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+//$screen-xs:                  480px !default;
+//$screen-xs-min:              $screen-xs !default;
+//$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+//$screen-sm:                  768px !default;
+//$screen-sm-min:              $screen-sm !default;
+//$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+//$screen-md:                  992px !default;
+//$screen-md-min:              $screen-md !default;
+//$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+//$screen-lg:                  1200px !default;
+//$screen-lg-min:              $screen-lg !default;
+//$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+//$screen-xs-max:              ($screen-sm-min - 1) !default;
+//$screen-sm-max:              ($screen-md-min - 1) !default;
+//$screen-md-max:              ($screen-lg-min - 1) !default;
+
+

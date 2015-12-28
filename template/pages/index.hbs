@@ -1,0 +1,208 @@
+<div class="hero bg-secondry">
+    <div class="container">
+        {{#hero}}
+            <figure class="hero-thumb"><img src="assets/img/vektor.png" alt=""></figure>
+            <div class="hero-desc">
+                <h2>{{{title}}}</h2>
+                <div class="content-text"><p>{{desc}}</p></div>
+                <p class="text-right"><a href="#" class="btn-square trans">{{btn}}</a></p>
+            </div>
+        {{/hero}}
+    </div>
+</div><!-- //Hero -->
+
+<div id="main" role="main">
+	
+	<div class="mainsearch salinputwrap bg-base">
+        <div class="container">
+            <figure class="tipsSrc"><img src="assets/img/circle1.png" alt=""></figure>
+            <form action="/SalaryRecords/addSalaryRecord" class="form-horizontal" id="form_sample_1" method="post" accept-charset="utf-8" novalidate="novalidate">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST"></div> 
+                <div class="form-group col-md-3">
+                    <div class="wrap-validation">
+                        <div class="check-val">
+                            <div class="input select required">
+                               <select name="data[SalaryRecord][profession_id]" required="required" class="form-control required selectpicker select1 form-control" onchange="getprofessionrole();" tabindex="1" id="SalaryRecordProfessionId">
+                                    <option value="">Your specialist area</option>
+                                    <option value="1">Art and Animation</option>
+                                    <option value="2">Audio and Sound</option>
+                                    <option value="3">Community Management</option>
+                                    <option value="5">Editorial and Journalism</option>
+                                    <option value="4">Game and Level Design</option>
+                                    <option value="6">HR and Recruiting</option>
+                                    <option value="7">Marketing</option>
+                                    <option value="8">PR </option>
+                                    <option value="9">Production</option>
+                                    <option value="10">Programming</option>
+                                    <option value="11">QA and Localisation </option>
+                                    <option value="12">Retail</option>
+                                    <option value="13">Sales</option>
+                                    <option value="14">Technical and Customer Support</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- //form-group --> 
+                <div class="form-group col-md-3">
+                    <div class="wrap-validation">
+                        <div class="check-val">
+                            <select id="SalaryRecordProfessionRoleId" class="form-control selectpicker select1" name="data[SalaryRecord][profession_role_id]" >
+                                <option value="">Please select</option>
+                                <option value="77">Director Level</option>
+                                <option value="76">Economy Design</option>
+                                <option value="21">Game Design</option>
+                                <option value="22">Level Design</option>
+                                <option value="78">Manager Level</option>
+                                <option value="23">Multiplayer Design</option>
+                                <option value="24">Tech/Systems Design</option>
+                                <option value="25">UI Design</option>
+                                <option value="75">UX Design</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- //form-group --> 
+
+                <div class="form-group col-md-3">
+                    <div class="iteminputsal">
+                        <div class="wrap-validation">
+                            <div class="check-val">
+                                <input name="data[SalaryRecord][exact_job_title]" class="form-control" placeholder=" Your exact job title " required="required" tabindex="3" type="text" id="SalaryRecordExactJobTitle">                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn-square basedark" value="Next">
+                </div>
+            </form>      
+        </div>
+   	</div><!-- //mainsearch -->
+
+    <section class="emreason">
+            <div class="container">
+                {{#whyus}}
+                    <h2 class="title-md">{{{title}}}</h2>
+                    <div class="row">
+                        {{~#item}}
+                            <article class="emreason-box col-sm-4">
+                                <a href="#">
+                                    <div class="inside">
+                                        <figure><img src="assets/img/{{thumb}}"></figure>
+                                        <h3>{{title}}</h3>
+                                        <div class="content-text">
+                                            <p>{{desc}}</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article> <!-- //emreason-box -->
+                        {{~/item}}
+                    </div>
+                {{/whyus}}
+            </div>
+    </section><!-- //emreason -->
+
+    <div class="contribute bg-base">
+        <h2 class="title-md">Already Contributed? Then why not...</h2>
+        <section class="contrib-typeWrap">
+            {{~#contribute}}
+                <article class="contrib-type {{#is default false}}notDefault{{/is}} col-sm-6">
+                    <div class="desc">
+                        <h4 class="title-md">{{title}}</h4>
+                        <div class="content-text">
+                            <p>{{desc}}</p>
+                        </div> 
+                        <p class="text-right"><a href="#" class="btn-square trans">{{btn}}</a></p>
+                    </div>
+                </article><!-- //contrib-type -->
+            {{~/contribute}}
+        </section><!-- //contrib-typeWrap -->
+    </div><!-- //contrib-text -->
+
+    <div class="sshome-table">
+        <div class="container">
+        {{#salaryTable}}
+            <h2 class="title-md">{{title}}</h2>
+            <div class="table-responsive">
+                <table class="table tb-contrib"> 
+                    <tr>
+                        <th>salary</th>
+                        <th>job title</th>
+                        <th>location</th>
+                        <th>Job type</th>
+                        <th>date added</th>
+                        <th></th>
+                    </tr>
+                    {{~#list}}
+                    <tr>
+                        <td>{{salary}}</td>
+                        <td>{{job}}</td>
+                        <td>{{location}}</td>
+                        <td>{{type}}</td>
+                        <td>{{date}}</td>
+                        <td>{{btn}}</td>
+                    </tr>
+                    {{~/list}}
+                </table>
+            </div>
+            <div class="contrib-btn"><a href="#" class="btn-square trans">Contribute</a></div>
+        {{/salaryTable}}
+        </div>
+    </div> <!-- //sshome-table -->
+
+    <section class="mid-hero bg-grey">
+        <div class="container">
+            {{#midhero}}
+                <figure class="midhero-thumb">
+                    <img src="assets/img/{{thumb}}">
+                </figure>
+                <div class="desc">
+                    <h5 class="title-md">{{title}}</h5>
+                    <div class="content-text">
+                        <p>{{desc}}</p>
+                    </div>
+                    <a href="#" class="btn-square trans">{{btn}}</a>
+                </div>
+            {{/midhero}}
+        </div>
+    </section><!-- //sc-intro -->
+
+    <div class="ss-join bg-darken">
+        <div class="container">
+        <figure class="tipsSrc-join"><img src="assets/img/circle2.png" alt=""></figure>
+        {{#signup}}
+            <header>
+                <h2 class="title-md">{{title}}</h2>
+                <div class="content-text">
+                 <p>{{desc}}</p>
+                </div>
+            </header>
+            <div class="form-join">
+                <form>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="email" class="form-control" placeholder="Valid email address">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-groupBtn">
+                      <input type="submit" value="sign up" class="btn-square">
+                  </div>
+                </form>
+            </div><!-- //form-join -->
+        {{/signup}}
+        </div>
+    </div><!-- //ss-join -->
+
+    <div class="ss-social">
+        <div class="container">
+            {{~#social}}
+                <a href="#" class="{{class}}"><i class="{{icon}}"></i></a>
+            {{~/social}}
+        </div>
+    </div>
+</div> <!-- //MAIN -->

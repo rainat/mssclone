@@ -1,0 +1,149 @@
+{
+	"basenames":[
+			"checkout-b", "checkout", "checkout-c-1", "checkout-c-3", "checkout-e-1", "checkout-e-2"
+	], 
+	"logo" :{
+		"thumb" : "logo.png",
+		"title" : "Your Survey Name"
+	},
+	"hero" : {
+		"title" : "How does your salary compare to <br><span>your peers?</span>",
+		"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
+		"btn" : "contribute"
+ 	},
+ 	"whyus" :{
+ 		"title" : "Top <span>3</span> reasons employees and companies use our Salary Survey",
+ 		"item" :[
+ 			{
+ 				"thumb" : "vektor_thumb1.png",
+ 				"title" : "Salary Benchmarking.",
+ 				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+ 			},
+ 			{
+ 				"thumb" : "vektor_thumb2.png",
+ 				"title" : "Pay Review Preperation.",
+ 				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+ 			},
+ 			{
+ 				"thumb" : "vektor_thumb3.png",
+ 				"title" : "Salary Benchmarking.",
+ 				"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+ 			}
+ 		]
+ 	},
+ 	"contribute" : [
+ 		{
+ 			"default" : false,
+ 			"title" : "Search for a specific job.",
+ 			"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
+ 			"btn" : "let’s go"
+ 		},
+ 		{
+ 			"title" : "Search for salary type.",
+ 			"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
+ 			"btn" : "let’s go"
+ 		}
+ 	],
+ 	"salaryTable" :{
+ 		"title" : "Last 5 Salary Contributions",
+ 		"list" : [
+ 			{
+ 				"salary" : "£19,000",
+ 				"job" : "IT technician",
+ 				"location" : "London, UK",
+ 				"type" : "Temp",
+ 				"date" : "01-10-2015",
+ 				"btn" : "view full details"
+ 			},
+ 			{
+ 				"salary" : "£17,000",
+ 				"job" : "Security staff",
+ 				"location" : "London, UK",
+ 				"date" : "01-10-2015",
+ 				"btn" : "view full details"
+ 			},
+ 			{
+ 				"salary" : "£45,000",
+ 				"job" : "Sales person",
+ 				"location" : "London, UK",
+ 				"date" : "01-10-2015",
+ 				"btn" : "view full details"
+ 			},
+ 			{
+ 				"salary" : "£78,000",
+ 				"job" : "Regional manager",
+ 				"location" : "London, UK",
+ 				"date" : "01-10-2015",
+ 				"btn" : "view full details"
+ 			},
+ 			{
+ 				"salary" : "£79,000",
+ 				"job" : "Off-shore engineer",
+ 				"location" : "London, UK",
+ 				"date" : "01-10-2015",
+ 				"btn" : "view full details"
+ 			}
+ 		]
+ 	},
+ 	"midhero": {
+ 		"title" : "A free salary exchange website for your industry",
+ 		"desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
+ 		"btn" : "contribute",
+ 		"thumb" : "verktor2.png"
+ 	},
+ 	"signup": {
+ 		"title" : "Did you know?",
+ 		"desc" : "We can send you free salary alerts by email when new salaries are entered that match your profile. Join us today to take advantage."
+ 	},
+ 	"social" : [
+ 		{
+ 			"icon" : "fa fa-facebook",
+ 			"class" : "fb"
+ 		},
+ 		{
+ 			"icon" : "fa fa-twitter",
+ 			"class" : "tw"
+ 		},
+ 		{
+ 			"icon" : "fa fa-linkedin",
+ 			"class" : "linkedin"
+ 		},
+ 		{
+ 			"icon" : "fa fa-google",
+ 			"class" : "google"
+ 		}	
+ 	],
+ 	
+ 	"footmenu" :[
+ 		{
+ 			"title" : "employees",
+ 			"list" : [
+ 				"Add your Salary", "Search Salaries", "Search Jobs", "A-Z of Employers", " FAQs"
+ 			]
+ 		},
+ 		{
+ 			"title" : "companies",
+ 			"list" : [
+ 				"About Us", "Branding Opportunities", "Post Jobs", "Request a Report", " FAQs"
+ 			]
+ 		},
+ 		{
+ 			"title" : "legal",
+ 			"list" : [
+ 				"Privacy Policy", "Terms of Use", "Cookie Policy", "Site Map"
+ 			]
+ 		},
+ 		{
+ 			"title" : "connect",
+ 			"list" : [
+ 				"101", "Your Street", "Your town", "Your county", "MU2 2UC"
+ 			]
+ 		}
+ 	],
+ 	"footer": {
+ 		"phone" : "telephone today free on 0800 123 456",
+ 		"mail" : "info@yourcompany.com",
+ 		"copy" : "Your company Salary Survey. All rights reserved.",
+ 		"powered" : "Salary Survey Software by <a href='#' target='_blank'> MySalarySurvey.com</a>"
+ 	}
+}
