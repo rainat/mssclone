@@ -83,6 +83,9 @@ img {
     opacity: 1;
     z-index: 11; }
 
+#main {
+  padding-bottom: 0; }
+
 /** CONTAINER
 ===================================*/
 @media (min-width: 1430px) {
@@ -737,3 +740,9 @@ input[type="radio"]:checked + label span {
       background-color: #4376aa; }
     .ss-social a.google {
       background-color: #d53e28; }
+
+/** FOOTER
+===================================*/
+#footer {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 50px; }
