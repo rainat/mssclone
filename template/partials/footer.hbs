@@ -2,7 +2,7 @@
 	<div class="footMenu">
 		<div class="container">
 			{{~#footmenu}}
-				<div class="footMenu-item footercookie col-md-3 col-sm-6">
+				<div class="footMenu-item footercookie col-md-3">
 					<h3 class="title-foot">{{title}}</h3>
 					<ul>
 						{{#list}}
@@ -15,19 +15,17 @@
 	</div><!-- //footMenu -->
 
 	{{#footer}}
-	<div class="footcontact bg-second">
+	<div class="footcontact bg-secondry">
 		<div class="container">
-			<p class="phone"><i class="fa fa-phone"></i>{{phone}}<p>
-			<p class="email"><i class="fa fa-envelope-o"></i>{{email}}</p>	
+			<p class="phone"><i class="fa fa-phone"></i>{{phone}}</p>
+			<p class="email"><i class="fa fa-envelope-o"></i>info@yourcompany.com</p>	
 		</div>
 	</div><!-- //footcontact -->
 
 	<div class="container">
 		<div class="copyright">
-	        <div class="wrapper">
-	            <div class="col-sm-6">&copy;{{copy}}</div>
-	            <div class="col-sm-6">{{{powered}}}</div>
-	        </div>
+            <div class="copyItem">&copy;{{copy}}</div>
+            <div class="copyItem">{{{powered}}}</div>
 	    </div><!-- //copyright -->
     </div>
 	{{/footer}}

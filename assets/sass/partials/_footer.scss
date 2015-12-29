@@ -4,3 +4,115 @@
 	border-top: 1px solid #e5e5e5;
 	padding-top: 50px;
 }
+
+.footMenu{
+	position: relative;
+	padding-bottom: 100px;
+	&:before{
+		content:'';
+		background: image-url('logo_grey.png') 0 0 no-repeat;
+		@include background-size(78px auto);
+		@include size(78px, 99px);
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		bottom : 0;
+		top: auto;
+		margin: auto;
+		margin-left: -39px;
+
+	}
+}
+.footMenu-item{
+	text-align: center;
+	color: #858585;
+	font-size: 0.9em;
+	.title-foot{
+		font-weight: $font-bold;
+		font-size: 14px;
+		color: #858585;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	ul{
+		li{
+			a{
+				color: #b0b0b0;
+				display: block;
+    			padding: 1px 0;
+				&:hover{
+					color: $primary-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 62em){
+		@include inline-block();
+		width: 48%;
+		text-align: left;
+		margin-bottom: 20px;
+    	padding-bottom: 20px;
+	}
+	@media screen and (max-width: 32em){
+		display: block;
+		width: 100%;
+		border-bottom  : 1px solid #cecece;
+	}
+}
+
+.footcontact{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-weight: $font-bold;
+	padding: 10px 0;
+	font-size: 0.8em;
+	@media screen and (min-width: 48em){
+		margin-top: -12px;
+		background-image: image-url('shape.png');
+		background-position: center top;
+		background-repeat: no-repeat;
+		font-size: 1em;
+		.phone{
+			float: left;
+			margin-bottom: 0;
+		}
+		.email{
+			float: right;
+			margin-bottom: 0;
+		}
+	}
+	.fa{
+		@include square(32px);
+		border: 2px solid white;
+		@include border-radius(100%);
+		vertical-align: middle;
+		line-height: 27px;
+		text-align: center;
+		color: white;
+		margin-right: 8px;
+	}
+}
+
+.copyright{
+	padding: 20px 0 30px;
+	overflow: hidden;
+	text-align: center;
+	@media screen and (min-width: 38em){
+		text-align: left;
+	}
+	.copyItem{
+		margin-bottom: 15px;
+		@media screen and (min-width: 38em){
+			float: left;
+			margin-bottom: 0;
+			&:last-child{
+				float: right;
+			}
+		}
+	}
+}
