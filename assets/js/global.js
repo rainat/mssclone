@@ -43,5 +43,10 @@ function initializeScript(){
 -------------------------------------------------------------- */
 jQuery(document).ready(function(){
     initializeScript();
+
+	jQuery('.selectpicker').selectpicker({
+  		//style: 'btn-info',
+  		//size: 4
+	});
 });
 /* END ------------------------------------------------------- */

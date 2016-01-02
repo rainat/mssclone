@@ -174,7 +174,11 @@ h1, h2, h3, h4, h5 {
 .form-control {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  background-color: white; }
+
+*:focus {
+  outline: none; }
 
 /** BACKGROUND-COLOR
 ===================================*/
@@ -510,13 +514,17 @@ input[type="radio"]:checked + label span {
       line-height: 1.6em; }
 
 .tipsSrc {
-  width: 220px;
+  display: none;
+  width: 175px;
   height: auto;
   overflow: hidden;
   position: absolute;
   z-index: 10;
-  top: -225px;
-  left: 10px; }
+  top: -188px;
+  left: 0px; }
+  @media screen and (min-width: 62em) {
+    .tipsSrc {
+      display: block; } }
 
 .tipsSrc-join {
   width: 220px;
@@ -535,12 +543,16 @@ input[type="radio"]:checked + label span {
 /** MAIN SEARCH
 ===================================*/
 .mainsearch {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-align: center; }
   .mainsearch:before, .mainsearch:after {
     content: " ";
     display: table; }
   .mainsearch:after {
     clear: both; }
+  .mainsearch.salinputwrap {
+    padding-right: 0;
+    padding-left: 0; }
   .mainsearch .container {
     position: relative; }
   .mainsearch .form-group {
@@ -549,6 +561,64 @@ input[type="radio"]:checked + label span {
   .mainsearch .iteminputsal {
     float: none;
     width: 100%; }
+  .mainsearch .form-control {
+    height: 48px;
+    background-color: white; }
+  .mainsearch .iteminputsal .form-control {
+    height: 48px;
+    background-color: white; }
+  .mainsearch .bootstrap-select > .btn {
+    width: 100%;
+    padding-right: 25px;
+    height: 48px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: white; }
+  .mainsearch .caret {
+    border-top-color: #0088cc; }
+  .mainsearch .btn-group.bootstrap-select {
+    height: auto; }
+    .mainsearch .btn-group.bootstrap-select:before, .mainsearch .btn-group.bootstrap-select:after {
+      content: " ";
+      display: table; }
+    .mainsearch .btn-group.bootstrap-select:after {
+      clear: both; }
+  .mainsearch .btn-square {
+    padding-top: 16px;
+    padding-bottom: 16px; }
+
+.src-group {
+  margin-bottom: 7px; }
+  @media screen and (min-width: 62em) {
+    .src-group {
+      width: 30.5%;
+      padding: 0 15px;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      margin-bottom: 0; } }
+  @media screen and (min-width: 62em) and (max-width: 75em) {
+    .src-group {
+      width: 28%; } }
+  .src-group:first-child {
+    padding-left: 0; }
+
+.src-group-btn {
+  text-align: center;
+  margin-bottom: 7px; }
+  @media screen and (min-width: 62em) {
+    .src-group-btn {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      margin-bottom: 0;
+      text-align: right; } }
 
 /** EMPLOYEE REASON
 ===================================*/
@@ -669,6 +739,16 @@ input[type="radio"]:checked + label span {
       float: right;
       margin-right: 5%;
       margin-left: 0; } }
+
+/**  HOME TABLE
+===================================*/
+.sshome-table {
+  padding: 50px 0; }
+  @media screen and (min-width: 62em) {
+    .sshome-table {
+      padding-bottom: 70px; } }
+  .sshome-table .table.tabelhome {
+    width: 100%; }
 
 /** MIDDEL HERO
 ===================================*/

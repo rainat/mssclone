@@ -52,12 +52,16 @@
 	}
 
 .tipsSrc{
-	@include size(220px, auto);
+	display: none;
+	@include size(175px, auto);
 	overflow: hidden;
 	position: absolute;
 	z-index: 10;
-	top: -225px;
-	left: 10px;
+	top: -188px;
+	left: 0px;
+	@media screen and (min-width: 62em){
+		display: block;
+	}
 }
 .tipsSrc-join{
 	@include size(220px, auto);
@@ -78,6 +82,12 @@
 .mainsearch{
 	@include clearfix();
 	margin-bottom: 0;
+	text-align: center;
+
+	&.salinputwrap{
+		padding-right: 0;
+		padding-left: 0;
+	}
 	.container{
 		position: relative;
 	}
@@ -92,7 +102,67 @@
 	.btn-square{
 
 	}
+
+	.form-control{
+		height: 48px;
+		background-color: white;
+	}
+	.iteminputsal .form-control {
+		height: 48px;
+		background-color: white;
+	}
+
+	.bootstrap-select > .btn {
+	    width: 100%;
+	    padding-right: 25px;
+	    height: 48px;
+	    -moz-border-radius: 0;
+	    -webkit-border-radius: 0;
+	    border-radius: 0;
+	    background-color: white;
+	}
+
+	.caret{
+		border-top-color: #0088cc;
+	}
+	.btn-group.bootstrap-select{
+		height: auto;
+		@include clearfix();
+	}
+
+	.btn-square{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
 }
+
+.src-group{
+	margin-bottom: 7px;
+	@media screen and (min-width: 62em){
+		width: 30.5%;
+		padding: 0 15px;
+		@include inline-block();
+		margin-bottom: 0;	
+	}
+	@media screen and (min-width: 62em) and (max-width: 75em){
+		width: 28%;
+	}
+	&:first-child{
+		padding-left: 0;
+	}
+}
+.src-group-btn{
+	text-align: center;
+	margin-bottom: 7px;
+	@media screen and (min-width: 62em){
+		@include inline-block();
+		vertical-align: top;
+		margin-bottom: 0;
+		text-align: right;	
+	}
+}
+
+
 
 /** EMPLOYEE REASON
 ===================================*/
@@ -227,6 +297,18 @@
 	}
 }
 
+/**  HOME TABLE
+===================================*/
+.sshome-table{
+	padding: 50px 0;
+	@media screen and (min-width: 62em){
+		padding-bottom: 70px;
+	}
+
+	.table.tabelhome{
+		width: 100%;
+	}
+}
 /** MIDDEL HERO
 ===================================*/
 .mid-hero{

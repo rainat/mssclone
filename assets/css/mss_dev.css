@@ -1,8 +1,6 @@
 /*LATO*/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800);
-@import url(animate.css);
-@import url(jquery.selectbox.css);
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/iconfont/flaticon.eot");
@@ -581,7 +579,7 @@ h6 {
   margin-top: -3px; }
 
 .salinputwrap {
-  background: url(../images/bgopacity2.png) repeat;
+  /*background: url(../images/bgopacity2.png) repeat;*/
   width: 100%;
   height: auto;
   min-height: 50px;
