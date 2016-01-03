@@ -253,7 +253,7 @@
 }
 
 .contrib-typeWrap{
-	
+	overflow: hidden;
 }
 .contrib-type{
 	background-color: $dark-color;
@@ -322,7 +322,11 @@
 			text-transform: uppercase;
 			padding: 18px 15px;
 			font-size: 0.8em;
-			border-right: 1px solid $primary-color;
+			border-left: 1px solid $primary-color;
+
+			&:first-child, &:last-child {
+				border-left: none;
+			}
 		}
 
 		td{

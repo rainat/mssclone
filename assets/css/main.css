@@ -705,6 +705,9 @@ input[type="radio"]:checked + label span {
     max-width: 1170px;
     margin: 0 auto; }
 
+.contrib-typeWrap {
+  overflow: hidden; }
+
 .contrib-type {
   background-color: #1e1e1e;
   background-image: url('../img/banner2.jpg?1450856179');
@@ -757,7 +760,9 @@ input[type="radio"]:checked + label span {
   text-transform: uppercase;
   padding: 18px 15px;
   font-size: 0.8em;
-  border-right: 1px solid #979735; }
+  border-left: 1px solid #979735; }
+  .table.tb-contrib th:first-child, .table.tb-contrib th:last-child {
+    border-left: none; }
 .table.tb-contrib td {
   background-color: white;
   border: none;
