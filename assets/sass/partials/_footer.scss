@@ -8,6 +8,7 @@
 .footMenu{
 	position: relative;
 	padding-bottom: 100px;
+	margin-bottom: 25px;
 	&:before{
 		content:'';
 		background: image-url('logo_grey.png') 0 0 no-repeat;
@@ -21,6 +22,10 @@
 		margin: auto;
 		margin-left: -39px;
 
+	}
+
+	@media screen and (min-width: 48em){
+		margin-bottom: 0;
 	}
 }
 .footMenu-item{

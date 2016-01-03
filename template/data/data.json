@@ -48,6 +48,7 @@
  		"title" : "Last 5 Salary Contributions",
  		"list" : [
  			{
+ 				"new" : true,
  				"salary" : "£19,000",
  				"job" : "IT technician",
  				"location" : "London, UK",

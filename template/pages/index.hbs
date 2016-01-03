@@ -121,24 +121,28 @@
         {{#salaryTable}}
             <h2 class="title-md">{{title}}</h2>
             <div class="table-responsive">
-                <table class="table tb-contrib tabelhome"> 
+                <table class="table tb-contrib"> 
                     <tr>
                         <th>salary</th>
                         <th>job title</th>
                         <th>location</th>
                         <th>Job type</th>
                         <th>date added</th>
-                        <th></th>
+                        <th style="width: 14%"></th>
                     </tr>
+                    <tr><td colspan="6" class="td-space"></td></tr>
                     {{~#list}}
                     <tr>
-                        <td>{{salary}}</td>
+                        <td class="{{#is new true}}new{{/is}}">
+                            <span class="tb-salary">{{salary}}</span>
+                        </td>
                         <td>{{job}}</td>
                         <td>{{location}}</td>
                         <td>{{type}}</td>
                         <td>{{date}}</td>
-                        <td>{{btn}}</td>
+                        <td><a href="#" class="btn-tbDetail">{{btn}}</a></td>
                     </tr>
+                    <tr><td colspan="6" class="td-space"></td></tr>
                     {{~/list}}
                 </table>
             </div>

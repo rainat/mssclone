@@ -85,8 +85,8 @@
 	text-align: center;
 
 	&.salinputwrap{
-		padding-right: 0;
-		padding-left: 0;
+		padding: 15px 0;
+
 	}
 	.container{
 		position: relative;
@@ -253,7 +253,7 @@
 }
 
 .contrib-typeWrap{
-	@include make-row();
+	
 }
 .contrib-type{
 	background-color: $dark-color;
@@ -297,6 +297,10 @@
 	}
 }
 
+.contrib-btn{
+	text-align: center;
+}
+
 /**  HOME TABLE
 ===================================*/
 .sshome-table{
@@ -307,6 +311,78 @@
 
 	.table.tabelhome{
 		width: 100%;
+	}
+}
+
+.table{
+	&.tb-contrib{
+		th{
+			background-color: darken($primary-color, 8%);
+			border: none;
+			text-transform: uppercase;
+			padding: 18px 15px;
+			font-size: 0.8em;
+			border-right: 1px solid $primary-color;
+		}
+
+		td{
+			background-color: white;
+			border: none;
+			padding: 8px 15px;
+			color: $text-color;
+			font-size: 0.9em;
+			border-left: 1px solid #e0e1e1;
+			position: relative;
+			vertical-align: middle;
+			&.td-space{
+				background-color: transparent;
+				padding: 6px;
+				&:first-child{
+					background-color: transparent;
+				}
+			}
+
+			&:first-child{
+				background-color: $secondary-color;
+				color: white;
+				border-left: none;
+			}
+			&:last-child{
+				border-left: none;
+				padding-right: 8px;
+			}
+
+			&.new{
+				background-color:  darken($secondary-color, 8%);
+				background-image: image-url('ribbon_new.png');
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 42px auto;
+			}
+
+			.tb-salary{
+				display: block;
+				text-align: center;
+				font-weight: $font-bold;
+				font-size: 18px;
+			}
+
+			.btn-tbDetail{
+				background-color: $secondary-color;
+				color: white;
+				font-size: 0.8em;
+				display: block;
+				color: white;
+				text-align: center;
+				font-weight: $font-bold;
+				text-transform: uppercase;
+				    padding: 18px 10px;
+
+				&:hover{
+					text-decoration: none;	
+				}
+			}
+		}
 	}
 }
 /** MIDDEL HERO

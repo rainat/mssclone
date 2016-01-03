@@ -180,6 +180,14 @@ h1, h2, h3, h4, h5 {
 *:focus {
   outline: none; }
 
+/** TABLE
+===================================*/
+.table-responsive {
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch; }
+
 /** BACKGROUND-COLOR
 ===================================*/
 .bg-secondry {
@@ -551,8 +559,7 @@ input[type="radio"]:checked + label span {
   .mainsearch:after {
     clear: both; }
   .mainsearch.salinputwrap {
-    padding-right: 0;
-    padding-left: 0; }
+    padding: 15px 0; }
   .mainsearch .container {
     position: relative; }
   .mainsearch .form-group {
@@ -698,15 +705,6 @@ input[type="radio"]:checked + label span {
     max-width: 1170px;
     margin: 0 auto; }
 
-.contrib-typeWrap {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .contrib-typeWrap:before, .contrib-typeWrap:after {
-    content: " ";
-    display: table; }
-  .contrib-typeWrap:after {
-    clear: both; }
-
 .contrib-type {
   background-color: #1e1e1e;
   background-image: url('../img/banner2.jpg?1450856179');
@@ -740,6 +738,9 @@ input[type="radio"]:checked + label span {
       margin-right: 5%;
       margin-left: 0; } }
 
+.contrib-btn {
+  text-align: center; }
+
 /**  HOME TABLE
 ===================================*/
 .sshome-table {
@@ -749,6 +750,58 @@ input[type="radio"]:checked + label span {
       padding-bottom: 70px; } }
   .sshome-table .table.tabelhome {
     width: 100%; }
+
+.table.tb-contrib th {
+  background-color: #79792a;
+  border: none;
+  text-transform: uppercase;
+  padding: 18px 15px;
+  font-size: 0.8em;
+  border-right: 1px solid #979735; }
+.table.tb-contrib td {
+  background-color: white;
+  border: none;
+  padding: 8px 15px;
+  color: #635c5d;
+  font-size: 0.9em;
+  border-left: 1px solid #e0e1e1;
+  position: relative;
+  vertical-align: middle; }
+  .table.tb-contrib td.td-space {
+    background-color: transparent;
+    padding: 6px; }
+    .table.tb-contrib td.td-space:first-child {
+      background-color: transparent; }
+  .table.tb-contrib td:first-child {
+    background-color: #339798;
+    color: white;
+    border-left: none; }
+  .table.tb-contrib td:last-child {
+    border-left: none;
+    padding-right: 8px; }
+  .table.tb-contrib td.new {
+    background-color: #297979;
+    background-image: url('../img/ribbon_new.png?1451776743');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 42px auto; }
+  .table.tb-contrib td .tb-salary {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px; }
+  .table.tb-contrib td .btn-tbDetail {
+    background-color: #339798;
+    color: white;
+    font-size: 0.8em;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 10px; }
+    .table.tb-contrib td .btn-tbDetail:hover {
+      text-decoration: none; }
 
 /** MIDDEL HERO
 ===================================*/
@@ -833,7 +886,8 @@ input[type="radio"]:checked + label span {
 
 .footMenu {
   position: relative;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-bottom: 25px; }
   .footMenu:before {
     content: '';
     background: url('../img/logo_grey.png?1450855513') 0 0 no-repeat;
@@ -850,6 +904,9 @@ input[type="radio"]:checked + label span {
     top: auto;
     margin: auto;
     margin-left: -39px; }
+  @media screen and (min-width: 48em) {
+    .footMenu {
+      margin-bottom: 0; } }
 
 .footMenu-item {
   text-align: center;
