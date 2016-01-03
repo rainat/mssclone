@@ -521,32 +521,34 @@ input[type="radio"]:checked + label span {
     .hero-desc .content-text p {
       line-height: 1.6em; }
 
-.tipsSrc {
+.base-tips, .tipsSrc, .tipsSrc-join, .tipsSrc-table {
   display: none;
-  width: 175px;
-  height: auto;
   overflow: hidden;
   position: absolute;
   z-index: 10;
+  overflow: hidden; }
+  @media screen and (min-width: 62em) {
+    .base-tips, .tipsSrc, .tipsSrc-join, .tipsSrc-table {
+      display: block; } }
+
+.tipsSrc {
+  width: 175px;
+  height: auto;
   top: -188px;
   left: 0px; }
-  @media screen and (min-width: 62em) {
-    .tipsSrc {
-      display: block; } }
 
 .tipsSrc-join {
   width: 220px;
   height: auto;
-  overflow: hidden;
-  position: absolute;
-  z-index: 10;
-  top: -128px;
-  right: 120px;
-  left: auto;
-  display: none; }
-  @media screen and (min-width: 62em) {
-    .tipsSrc-join {
-      display: block; } }
+  top: -188px;
+  right: 120px; }
+
+.tipsSrc-table {
+  width: 160px;
+  height: auto;
+  top: -90px;
+  right: 0;
+  left: auto; }
 
 /** MAIN SEARCH
 ===================================*/
@@ -751,6 +753,8 @@ input[type="radio"]:checked + label span {
   @media screen and (min-width: 62em) {
     .sshome-table {
       padding-bottom: 70px; } }
+  .sshome-table .container {
+    position: relative; }
   .sshome-table .table.tabelhome {
     width: 100%; }
 

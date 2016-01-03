@@ -51,30 +51,37 @@
 		}
 	}
 
-.tipsSrc{
+
+.base-tips{
 	display: none;
-	@include size(175px, auto);
 	overflow: hidden;
 	position: absolute;
 	z-index: 10;
-	top: -188px;
-	left: 0px;
+	overflow: hidden;
 	@media screen and (min-width: 62em){
 		display: block;
 	}
 }
+.tipsSrc{
+	@extend .base-tips;
+	@include size(175px, auto);
+	top: -188px;
+	left: 0px;
+	
+}
 .tipsSrc-join{
+	@extend .base-tips;
 	@include size(220px, auto);
-	overflow: hidden;
-	position: absolute;
-	z-index: 10;
-	top: -128px;
+	top: -188px;
     right: 120px;
+}
+
+.tipsSrc-table{
+	@extend .base-tips;
+	@include size(160px, auto);
+	top: -90px;
+    right: 0;
 	left: auto;
-	display: none;
-	@media screen and (min-width: 62em){
-		display: block;
-	}
 }
 
 /** MAIN SEARCH
@@ -307,6 +314,10 @@
 	padding: 50px 0;
 	@media screen and (min-width: 62em){
 		padding-bottom: 70px;
+	}
+
+	.container{
+		position: relative;
 	}
 
 	.table.tabelhome{
