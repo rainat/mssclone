@@ -532,9 +532,9 @@ input[type="radio"]:checked + label span {
       display: block; } }
 
 .tipsSrc {
-  width: 175px;
+  width: 200px;
   height: auto;
-  top: -188px;
+  top: -215px;
   left: 0px; }
 
 .tipsSrc-join {
@@ -637,6 +637,8 @@ input[type="radio"]:checked + label span {
   .emreason .title-md {
     text-align: center;
     margin-bottom: 45px; }
+    .emreason .title-md span {
+      color: #339798; }
 
 .emreason-box {
   position: relative;

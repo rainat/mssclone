@@ -64,8 +64,8 @@
 }
 .tipsSrc{
 	@extend .base-tips;
-	@include size(175px, auto);
-	top: -188px;
+	@include size(200px, auto);
+	top: -215px;
 	left: 0px;
 	
 }
@@ -179,6 +179,9 @@
 	.title-md{
 		text-align: center;
 		margin-bottom: 45px;	
+		span{
+			color: #339798;	
+		}
 	}
 }
 
