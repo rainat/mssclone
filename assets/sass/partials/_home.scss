@@ -78,8 +78,8 @@
 
 .tipsSrc-table{
 	@extend .base-tips;
-	@include size(160px, auto);
-	top: -90px;
+	@include size(200px, auto);
+	top: -140px;
     right: 0;
 	left: auto;
 }

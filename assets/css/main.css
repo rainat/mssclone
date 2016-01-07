@@ -544,9 +544,9 @@ input[type="radio"]:checked + label span {
   right: 120px; }
 
 .tipsSrc-table {
-  width: 160px;
+  width: 200px;
   height: auto;
-  top: -90px;
+  top: -140px;
   right: 0;
   left: auto; }
 
