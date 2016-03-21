@@ -64,22 +64,22 @@
 }
 .tipsSrc{
 	@extend .base-tips;
-	@include size(200px, auto);
-	top: -215px;
+	@include size(170px, auto);
+	top: -190px;
 	left: 0px;
 	
 }
 .tipsSrc-join{
 	@extend .base-tips;
-	@include size(220px, auto);
-	top: -188px;
+	@include size(180px, auto);
+	top: -145px;
     right: 120px;
 }
 
 .tipsSrc-table{
 	@extend .base-tips;
-	@include size(200px, auto);
-	top: -124px;
+	@include size(150px, auto);
+	top: -82px;
     right: 0;
 	left: auto;
 }
@@ -146,16 +146,19 @@
 .src-group{
 	margin-bottom: 7px;
 	@media screen and (min-width: 62em){
-		width: 30.5%;
-		padding: 0 15px;
+		width: 29.8%;
 		@include inline-block();
-		margin-bottom: 0;	
+		margin-bottom: 0;
+		padding: 0 15px;
 	}
 	@media screen and (min-width: 62em) and (max-width: 75em){
 		width: 28%;
 	}
 	&:first-child{
 		padding-left: 0;
+	}
+	&:last-child{
+		padding-right: 0;
 	}
 }
 .src-group-btn{
