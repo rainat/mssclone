@@ -91,9 +91,11 @@ img {
 @media (min-width: 1430px) {
   .container {
     width: 1400px; } }
-@media (min-width: 1680px) {
-  .container {
-    width: 1620px; } }
+/*@media (min-width : 1680px) {
+	.container{
+		  width: 1620px;
+	}
+}*/
 /** SPACE
 ===================================*/
 .space15 {
@@ -182,11 +184,12 @@ h1, h2, h3, h4, h5 {
 
 /** TABLE
 ===================================*/
-.table-responsive {
-  overflow-y: hidden;
-  overflow-x: scroll !important;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  -webkit-overflow-scrolling: touch; }
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch; } }
 
 /** BACKGROUND-COLOR
 ===================================*/
@@ -546,7 +549,7 @@ input[type="radio"]:checked + label span {
 .tipsSrc-table {
   width: 200px;
   height: auto;
-  top: -140px;
+  top: -124px;
   right: 0;
   left: auto; }
 
